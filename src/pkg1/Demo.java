@@ -1,5 +1,7 @@
 package pkg1;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Demo {
@@ -61,9 +63,21 @@ public class Demo {
 		System.out.println(fruits);
 		
 		//Remove all the elements from array list
-		fruits.clear();
+//		fruits.clear();
 		System.out.println(fruits);
 		System.out.println(fruits.size());
+
+		System.out.println();
+		//Print the values of array list using for each loop
+		for(String i : fruits)
+			System.out.println(i);
+		
+		fruits.add("Banana");
+		System.out.println(fruits);
+		
+		//Sort the array list
+		Collections.sort(fruits);
+		System.out.println(fruits);
 	}
 
 }
